@@ -1,0 +1,22 @@
+@import "../settings/fonts";
+body {
+  background-image: url("../../../../FinalProject/src/images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: $font-general;
+}
+
+.container1 {
+  width: 70vw;
+  margin: 0 auto;
+  min-width: 350px;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  display: inline-block;
+}
+

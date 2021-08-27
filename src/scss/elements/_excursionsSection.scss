@@ -1,0 +1,134 @@
+@import "../settings/mixins";
+@import "excursions";
+
+.excursion__section-info {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-bottom: 15px;
+
+
+  &:nth-child(4) {
+    margin-bottom: 0;
+  }
+
+  .excursion--inner-header {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid orangered;
+  }
+
+  img {
+    height: auto;
+    width: auto;
+  }
+
+
+
+  .excursion__section-price {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .excursion--price-info {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+}
+
+.excursion__section-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 10px 30px;
+
+  .single-btn {
+    @include buttons(orangered, white, darkorange, orangered)
+
+  }
+
+  .more-info-button {
+    @include buttons(mediumblue, white, dodgerblue, blue);
+    margin-right: 10px;
+  }
+}
+
+
+.excursion__detailed-main-header {
+  background-color: skyblue;
+  border-bottom: 3px solid orangered;
+  padding-bottom: 15px;
+}
+
+.excursion__detailed-info-container {
+  display: flex;
+
+
+
+  .excursion__detailed-info {
+    background-color: papayawhip;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .excursion__detailed-text {
+      margin-top: -180px;
+      padding: 10px;
+    }
+  }
+
+  .excursion__detailed-main-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 34px;
+    padding: 20px;
+
+    .excursion__detailed-inner-header {
+      color: black;
+      text-transform: uppercase;
+      align-self: center;
+
+    }
+
+    .excursion__detailed-price {
+
+    }
+  }
+}
+
+.excursion__detailed-btn {
+  font-size: 24px;
+  position: relative;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.excursion__detailed-info-images {
+  img {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+.floating__image {
+  img {
+    float: left;
+    margin: 0 20px 20px 10px;
+  }
+
+  p {
+    padding: 0 10px;
+    line-height: 2rem;
+    margin-top: -10px;
+  }
+}
+
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}

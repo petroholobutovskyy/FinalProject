@@ -1,0 +1,17 @@
+
+.carousel-item {
+  position: relative;
+}
+.carousel-header {
+
+  @media (max-width: 560px) {
+    font-size: 18px;
+  }
+}
+.carousel-text {
+
+  @media (max-width: 560px) {
+    font-size: 12px;
+  }
+}
+

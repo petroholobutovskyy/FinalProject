@@ -1,0 +1,70 @@
+@import "../settings/fonts";
+@import "../settings/mixins";
+.header__container {
+  display: flex;
+  justify-content: space-between;
+
+
+
+  .header-logo {
+    @include logo(34px, 15px);
+    padding-left: 0;
+  }
+  .header__user-container {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    font-size: 30px;
+    color: white;
+    .icon-shopping-cart {
+      margin-left: 10px;
+      color: red;
+    }
+  }
+}
+
+
+
+.header__navigation {
+  display: flex;
+  justify-content: center;
+  background-color: dodgerblue;
+
+
+  .navigation-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+    @media (max-width: 710px){
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+    }
+
+    .navigation-list-item {
+      padding: 10px 20px;
+
+      @media (max-width: 710px) {
+        border-bottom: 1px solid white;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+          transition: 5s;
+          border-bottom: 2px solid white;
+
+
+        }
+      }
+
+    }
+  }
+}
+
+
+

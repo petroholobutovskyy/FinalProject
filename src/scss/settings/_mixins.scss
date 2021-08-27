@@ -1,0 +1,29 @@
+@import "fonts";
+@mixin buttons ($backgroundColor, $color, $hoverBGColor, $boxShadowColor) {
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 20px;
+  background-color: $backgroundColor;
+  color: $color;
+  border: none;
+  transition: 0.3s;
+  box-shadow: 0 1px 2px $boxShadowColor;
+
+  &:hover {
+    background-color: $hoverBGColor;
+  }
+}
+
+@mixin logo($fontSize, $paddingLogo) {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-size: $fontSize;
+  font-family: $font-logo;
+  padding: $paddingLogo;
+
+  span {
+    color: red;
+  }
+
+}
