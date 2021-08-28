@@ -8,20 +8,20 @@ class Footer extends Component {
     render() {
         return (
             <FooterContainer className="container1 footer__container">
-                <div className="footer-middle toHide">
+                <footer className="footer-middle toHide">
                     <div className="container">
                         <div className="row columns__footer">
                             {/*Colomn1*/}
-                            <div className="col-md-3 col-sm-6">
+                            <section className="col-md-3 col-sm-6">
                                 <h4 style={{fontSize: "14px", fontWeight: "600"}}>Adres</h4>
                                 <ul className="list-unstyled">
                                     <li>00-111 ul. Warszawska 135</li>
                                     <li>Lwow, Ukraina</li>
 
                                 </ul>
-                            </div>
+                            </section>
                             {/*Colomn 2*/}
-                            <div className="col-md-3 col-sm-6">
+                            <section className="col-md-3 col-sm-6">
                                 <h4 style={{fontSize: "14px", fontWeight: "600"}}>Wycieczki</h4>
                                 <ul className="list-unstyled">
                                     <li> <a href="/Carpatins">Wyprawa w góry</a> </li>
@@ -29,9 +29,9 @@ class Footer extends Component {
                                     <li> <a href="/Castle">Sredniowieczne zamki Galicji</a> </li>
                                     <li> <a href="/Ship">Splyw statkiem rzeka Dnister</a> </li>
                                 </ul>
-                            </div>
+                            </section>
                             {/*Colomn3*/}
-                            <div className="col-md-3 col-sm-6">
+                            <section className="col-md-3 col-sm-6">
                                 <h4 style={{fontSize: "14px", fontWeight: "600"}}>Inne</h4>
                                 <ul className="list-unstyled">
                                     <li> <a href="/About-us">O nas</a> </li>
@@ -39,17 +39,17 @@ class Footer extends Component {
                                     <li> <a href="/Galery">Geleria zdjec</a> </li>
 
                                 </ul>
-                            </div>
+                            </section>
                         </div>
                     </div>
-                </div>
+                </footer>
 
                 {/*Footer Bottom*/}
-                <div className="footer-bottom">
+                <footer className="footer-bottom">
                     <p className="text-xs-center" style={{marginBottom: "0", paddingBottom: "10px"}}>
                         &copy;{new Date().getFullYear()} WanderlustTravel - All rights reserwed
                     </p>
-                </div>
+                </footer>
             </FooterContainer>
         );
     }

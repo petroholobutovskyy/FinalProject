@@ -10,8 +10,31 @@
   font-size: 20px;
   margin-bottom: 20px;
 
+  @media (max-width: 1100px) {
+    display: flex;
+    flex-direction: column;
+  }
+
   .contact__details {
     width: 50%;
+
+    @media (max-width: 1100px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    @media(max-width: 660px ) {
+      flex-wrap: nowrap;
+    }
+
+    .contact__phone {
+      @media (max-width: 660px) {
+        width: 100%;
+        min-width: 640px;
+        flex-wrap: nowrap;
+      }
+    }
 
 
     .contact__phone, .contact__email, .contact__social-media {
@@ -39,6 +62,10 @@
 
   .contact__form-container {
     width: 50%;
+
+    @media (max-width: 1100px) {
+      width: 100%;
+    }
 
     input, textarea {
       width: 100%;

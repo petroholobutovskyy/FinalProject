@@ -66,6 +66,13 @@
 .excursion__detailed-info-container {
   display: flex;
 
+  @media(max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+  }
+
 
 
   .excursion__detailed-info {
@@ -74,9 +81,20 @@
     flex-direction: column;
     justify-content: space-between;
 
+    @media (max-width: 1000px) {
+      height: 100%;
+    }
+
     .excursion__detailed-text {
       margin-top: -180px;
       padding: 10px;
+
+      @media (max-width: 1000px) {
+        margin-top: 0;
+      }
+      @media(max-width: 710px) {
+        font-size: 14px;
+      }
     }
   }
 
@@ -85,6 +103,10 @@
     justify-content: space-between;
     font-size: 34px;
     padding: 20px;
+
+    @media (max-width: 1000px) {
+      font-size: 14px;
+    }
 
     .excursion__detailed-inner-header {
       color: black;
@@ -95,6 +117,9 @@
 
     .excursion__detailed-price {
 
+      @media (max-width: 1000px) {
+        font-size: 20px;
+      }
     }
   }
 }
@@ -105,12 +130,32 @@
   bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (max-width: 710px) {
+    font-size: 18px;
+  }
 }
 
 .excursion__detailed-info-images {
+
+  @media (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+  }
   img {
     width: 100%;
-    height: 200px;
+    height: 180px;
+
+    @media(max-width: 1000px) {
+      width: 68%;
+      height: 100%;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    display: flex;
+    flex-direction: row;
+    width: 49%;
   }
 }
 

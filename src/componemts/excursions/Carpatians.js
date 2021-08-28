@@ -14,12 +14,12 @@ class Carpatians extends Component {
                 <HeaderMain/>
                 <h2 className="excursion__detailed-main-header">Informacja o wycieczce:</h2>
                 <h3 className="excursion__detailed-second-header">Wyprawa w góry</h3>
-                <div className="excursion__detailed-info-container">
-                    <div className="excursion__detailed-info">
-                        <div className="excursion__detailed-main-info">
+                <section className="excursion__detailed-info-container">
+                    <article className="excursion__detailed-info">
+                        <header className="excursion__detailed-main-info">
                             <h4 className="excursion__detailed-inner-header">main info</h4>
-                            <p className="excursion__detailed-price">Cena: $50</p>
-                        </div>
+                            <strong className="excursion__detailed-price">Cena: $50</strong>
+                        </header>
                         <p className="excursion__detailed-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
@@ -28,13 +28,13 @@ class Carpatians extends Component {
                         <div className="excursion__detailed-order">
                             <button className="single-btn excursion__detailed-btn">Rezerwuj</button>
                         </div>
-                    </div>
-                    <div className="excursion__detailed-info-images">
+                    </article>
+                    <figure className="excursion__detailed-info-images">
                         <img src={karpaty1}/>
                         <img src={karpaty2}/>
                         <img src={karpaty3}/>
-                    </div>
-                </div>
+                    </figure>
+                </section>
                 <Footer/>
             </div>
         );

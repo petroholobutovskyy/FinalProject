@@ -8,13 +8,13 @@ class Header extends Component {
     render() {
         return (
             <div className="container1">
-                <div className="header__container">
+                <header className="header__container">
                     <a href="/" className="header-logo">Wander<span>Lust</span></a>
                     <div className="header__user-container">
                         <FontAwesomeIcon icon={faUser} className="icon-user" />
                         <FontAwesomeIcon icon={faShoppingCart} className="icon-shopping-cart"/>
                     </div>
-                </div>
+                </header>
             </div>
         );
     }
