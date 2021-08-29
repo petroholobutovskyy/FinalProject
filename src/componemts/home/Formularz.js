@@ -6,27 +6,6 @@ import * as Yup from "yup";
 // Styled-components styles
 
 
-const MYFORM = styled(Form)`
-  width: 90%;
-  text-align: left;
-  padding-top: 2em;
-  padding-bottom: 2em;
-
-  @media(min-width: 786px) {
-    width: 50%;
-  }
-`;
-
-const BUTTON = styled(Button)`
-  background: #1863AB;
-  border: none;
-  font-size: 1.2em;
-  font-weight: 400;
-
-  &:hover {
-    background: #1D3461;
-  }
-`;
 
 const Formularz = () => {
     const phoneRegExp = /^(\+?\d{0,4})?\s?-?\s?(\(?\d{3}\)?)\s?-?\s?(\(?\d{3}\)?)\s?-?\s?(\(?\d{4}\)?)?$/;
@@ -38,7 +17,7 @@ const Formularz = () => {
             .required("*Imię jest wymagane"),
         lastName: Yup.string()
             .min(2, "*Nazwisko musi posiadać min 2 znaki")
-            .max(8, "*Nazwisko nie może przekraczać 20 znaków")
+            .max(20, "*Nazwisko nie może przekraczać 20 znaków")
             .required("*Nazwisko jest wymagane"),
         email: Yup.string()
             .email("*Email musi być ważny")
@@ -47,11 +26,11 @@ const Formularz = () => {
         phone: Yup.string()
             .matches(phoneRegExp, "*Numer nie jest ważny")
             .required("*Numer telefonu jest wymagany"),
-        terms: Yup.bool().required().oneOf([true], 'Warunki musza być zaakceptowane'),
+        terms: Yup.boolean().required('Warunki musza być zaakceptowane').oneOf([true], 'Warunki musza być zaakceptowane'),
     });
     return (
         <div className="container1">
-            <Formik initialValues={{ name:"", lastName: "", email:"", phone:""}}
+            <Formik initialValues={{ name:"", lastName: "", email:"", phone:"", terms: false}}
             validationSchema={validationSchema}
                     onSubmit={(values, {setSubmitting, resetForm}) => {
                         setSubmitting(true);
@@ -192,18 +171,14 @@ const Formularz = () => {
                             </Row>
                             <FormGroup className="mb-3 formularz_row" id="formGridCheckbox"
                                        style={{display: "flex", textAlign: "justify", fontSize: "14px"}}>
-                                <FormCheck
+                                <Form.Check
                                     required
                                     name="terms"
                                     onChange={handleChange}
                                     isInvalid={!!errors.terms}
                                     feedback={errors.terms}
                                     id="validationFormik0"
-                                    style={{marginRight: "30px", fontSize: "12px"}}
-                                    className={touched.terms && errors.terms ? "error" : null}/>
-                                {touched.terms && errors.terms ? (
-                                    <div className="error-message">{errors.terms}</div>
-                                ) : null}
+                                    style={{marginRight: "30px", fontSize: "12px"}}/>
                                 Oświadczam, że zapoznałem się z „Regulaminem świadczenia usług pośrednictwa ubezpieczeniowego drogą
                                 elektroniczną przez WanderlustTravel i akceptuję zawarte w nim warunki.
                                 Oświadczam, że niniejsza umowa ubezpieczenia spełnia moje wymagania i potrzeby ubezpieczeniowe, przy
@@ -211,6 +186,7 @@ const Formularz = () => {
                                 Oświadczam, że zapoznałem się z informacją o przetwarzaniu moich danych osobowych, zawartą w
                                 udostępnionym mi dokumencie „Informacja Administratora danych osobowych”."
                             </FormGroup>
+
                             <Button variant="primary"
                                     type="submit"
                                     onClick={handleSubmit}

@@ -1,0 +1,24 @@
+{
+  "excursions": [
+    {
+      "id": 1 ,
+      "name": "Wyprawa w góry" ,
+      "price": "$50"
+    },
+    {
+      "id": 2 ,
+      "name": "Poznaj niesamowity Lwow!" ,
+      "price": "$50"
+    },
+    {
+      "id": 3 ,
+      "name": "Sredniowieczne zamki Galicji" ,
+      "price": "$50"
+    },
+    {
+      "id": 4 ,
+      "name": "Splyw statkiem rzeka Dnister" ,
+      "price": "$50"
+    }
+  ]
+}
