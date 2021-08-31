@@ -7,8 +7,9 @@ import {faHandHoldingUsd} from "@fortawesome/free-solid-svg-icons/faHandHoldingU
 class WhyUs extends Component {
     render() {
         return (
-            <div className="container1">
+           
                 <section className="why-us__container">
+                     <div className="container1">
                     <h1 className="why-us__header">Dlaczego my?</h1>
                     <div className="why-us-reasons">
                         <div className="single-reason">
@@ -24,8 +25,9 @@ class WhyUs extends Component {
                             <h6>Dzialamy juz od 20 lat,<br/> co robi nas najbardziej<br/> doswiadczonym biurem w regionie.</h6>
                         </div>
                     </div>
+                    </div>
                 </section>
-            </div>
+           
         );
     }
 }

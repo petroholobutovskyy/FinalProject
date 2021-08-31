@@ -5,6 +5,7 @@ import Footer from "../home/Footer";
 import karpaty1 from '../../images/Karpaty1.jpg'
 import karpaty2 from '../../images/Karpaty2.jpg'
 import karpaty3 from '../../images/Karpaty3.jpg'
+import kartapy4 from '../../images/kartapy4.jpg'
 
 class Carpatians extends Component {
     render() {
@@ -26,14 +27,14 @@ class Carpatians extends Component {
                             voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
                             non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <div className="excursion__detailed-order">
-                            <button className="single-btn excursion__detailed-btn">Rezerwuj</button>
+                            <a href className="single-btn excursion__detailed-btn">Rezerwuj</a>
                         </div>
                     </article>
-                    <figure className="excursion__detailed-info-images">
+                    <div className="excursion__detailed-info-images">
                         <img src={karpaty1}/>
                         <img src={karpaty2}/>
-                        <img src={karpaty3}/>
-                    </figure>
+                        <img src={kartapy4}/>
+                    </div>
                 </section>
                 <Footer/>
             </div>

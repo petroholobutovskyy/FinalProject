@@ -29,7 +29,15 @@ const Formularz = () => {
         terms: Yup.boolean().required('Warunki musza być zaakceptowane').oneOf([true], 'Warunki musza być zaakceptowane'),
     });
     return (
-        <div className="container1">
+        <div className="container__formularz">
+            <div className="container1">
+            <h3 style={{
+                textTransform: "uppercase",
+                textAlign: "center",
+                padding: "20px 0",
+                fontWeight: "500",
+                color: "blue"
+                }}>Formularz zgłoszeniowy</h3>
             <Formik initialValues={{ name:"", lastName: "", email:"", phone:"", terms: false}}
             validationSchema={validationSchema}
                     onSubmit={(values, {setSubmitting, resetForm}) => {
@@ -48,15 +56,21 @@ const Formularz = () => {
                        handleBlur,
                        handleSubmit,
                        isSubmitting }) =>(
-                        <Form className="mx-auto" onSubmit={handleSubmit}>
+                        <Form className="mx-auto" onSubmit={handleSubmit}
+                        style={{
+                            padding: "0 20px"
+                        }}>
                             {console.log(values)}
-                            <Row className="mb-3">
+                            <Row className="mb-3 formularz_row">
                                 <Form.Group as={Col} controlId="formName">
                                     <Form.Label style={{color: "blue",
                                         textTransform: "uppercase",
                                         margin: "15px 10px 10px 0",
                                     }}>Imię :</Form.Label>
                                     <Form.Control
+                                    style={{
+                                        border: "1px solid #222222"
+                                    }}
                                         type="text"
                                         name="name"
                                         placeholder="Full Name"
@@ -74,7 +88,9 @@ const Formularz = () => {
                                         textTransform: "uppercase",
                                         margin: "15px 10px 10px 0",
                                     }}>Nazwisko :</Form.Label>
-                                    <Form.Control
+                                    <Form.Control style={{
+                                        border: "1px solid #222222"
+                                    }}
                                         type="text"
                                         name="lastName"
                                         placeholder="Nazwisko"
@@ -88,13 +104,15 @@ const Formularz = () => {
                                     ) : null}
                                 </Form.Group>
                             </Row>
-                            <Row className="mb-3">
+                            <Row className="mb-3 formularz_row">
                                 <Form.Group as={Col} controlId="formEmail">
                                     <Form.Label style={{color: "blue",
                                         textTransform: "uppercase",
                                         margin: "15px 10px 10px 0",
                                     }}>Email :</Form.Label>
-                                    <Form.Control
+                                    <Form.Control style={{
+                                        border: "1px solid #222222"
+                                    }}
                                         type="text"
                                         name="email"
                                         placeholder="Email"
@@ -111,7 +129,9 @@ const Formularz = () => {
                                         textTransform: "uppercase",
                                         margin: "15px 10px 10px 0",
                                     }}>Numer telefonu :</Form.Label>
-                                    <Form.Control
+                                    <Form.Control style={{
+                                        border: "1px solid #222222"
+                                    }}
                                         type="text"
                                         name="phone"
                                         placeholder="Numer telefonu"
@@ -124,9 +144,9 @@ const Formularz = () => {
                                 ) : null}
                                 </Form.Group>
                             </Row>
-                            <Row className="mb-3">
+                            <Row className="mb-3 formularz_row">
                                 <Col>
-                                    <FormSelect as={Col} style={{marginTop: "15px"}} required>
+                                    <FormSelect as={Col} style={{marginTop: "15px", border: "1px solid #222222"}} required>
                                         <option value="">Wybierz wycieczke:</option>
                                         <option value="gory">Wyprawa w góry</option>
                                         <option value="lwow">Pozdnaj niesamowity Lwów!</option>
@@ -135,7 +155,7 @@ const Formularz = () => {
                                     </FormSelect>
                                 </Col>
                                 <Col>
-                                    <FormSelect as={Col} style={{marginTop: "15px"}}>
+                                    <FormSelect as={Col} style={{marginTop: "15px", border: "1px solid #222222"}}>
                                         <option value="">Wybierz miasto wyjazdu</option>
                                         <option value="lwow">Lwów</option>
                                         <option value="luck">Łuck</option>
@@ -144,7 +164,7 @@ const Formularz = () => {
                                     </FormSelect>
                                 </Col>
                                 <Col>
-                                    <FormSelect as={Col}  style={{marginTop: "15px"}} required>
+                                    <FormSelect as={Col}  style={{marginTop: "15px", border: "1px solid #222222"}} required>
                                         <option value="">Wybierz ilość osób:</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -162,12 +182,12 @@ const Formularz = () => {
                                 <FormGroup as={Col}
                                            style={{color: "blue", textTransform: "uppercase"}}>
                                     <FormLabel>Wybierz datę podróży</FormLabel>
-                                    <FormControl type="date" required/>
+                                    <FormControl type="date" style={{border: "1px solid #222222"}} required/>
                                 </FormGroup>
                             </Row>
                             <Row className="mb-3 formularz_row">
                                 <FormLabel style={{color: "blue", textTransform: "uppercase"}}>Dodatkowe pytania:</FormLabel>
-                                <Col><FormControl as="textarea" style={{height: "150px", marginBottom: "20px"}}/></Col>
+                                <Col><FormControl as="textarea" style={{height: "150px", marginBottom: "20px", border: "1px solid #222222"}}/></Col>
                             </Row>
                             <FormGroup className="mb-3 formularz_row" id="formGridCheckbox"
                                        style={{display: "flex", textAlign: "justify", fontSize: "14px"}}>
@@ -202,6 +222,7 @@ const Formularz = () => {
                     )}
 
             </Formik>
+            </div>
         </div>
     );
 }

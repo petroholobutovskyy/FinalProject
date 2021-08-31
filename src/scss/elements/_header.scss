@@ -3,12 +3,13 @@
 .header__container {
   display: flex;
   justify-content: space-between;
-
+  background-color: #3723e4;
+ 
 
 
   .header-logo {
     @include logo(34px, 15px);
-    padding-left: 0;
+    
   }
   .header__user-container {
     display: flex;
@@ -20,6 +21,17 @@
       margin-left: 10px;
       color: red;
     }
+
+    .header__login-link {
+      font-size: 16px;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &:hover {
+        color: silver;
+      }
+    }
   }
 }
 
@@ -28,13 +40,16 @@
 .header__navigation {
   display: flex;
   justify-content: center;
-  background-color: dodgerblue;
+  background-color: #3723e4;
+  border-bottom: 1px solid skyblue;
 
 
   .navigation-list {
     display: flex;
     flex-direction: row;
     list-style: none;
+    text-transform: uppercase;
+    margin: .7rem 0;
 
     @media (max-width: 810px){
       display: flex;

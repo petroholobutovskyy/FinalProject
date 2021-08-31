@@ -1,44 +1,78 @@
 import React, {Component} from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import {Jumbotron, Button} from 'react-bootstrap'
 import mount1 from '../../images/mount1.jpg'
 import mount2 from '../../images/mount2.jpg'
 import mount3 from '../../images/mount3.jpg'
+import lwow4 from '../../images/lwow4.jpg'
+import dnieper from '../../images/dnieper.jpg'
 import styled from "styled-components";
+import { borderRadius } from '@material-ui/system';
 
 class CarouselInfo extends Component {
     render() {
         return (
-            <div className="container1" >
+            
                 <Carousel>
+                   
                     <Carousel.Item className="carousel-item" >
-                        <img className="d-block w-100" src={mount1} alt="first slide"/>
+                        <img className="d-block w-100" src={lwow4} alt="first slide"/>
                         <Carousel.Caption className="carousel-text">
-                            <h3 className="carousel-header">Jestesmy najwiekszym biurem podrózy w regionie!</h3>
-                            <p className="carousel-text">Juz od ponad 20 lat zorganizujemy wycieczki regionalne w Galicji.
-                                Przez ten okres z naszych uslug skorzystalo ponad 20 000 zadowolonych klientow!</p>
+                            <div className="jumbotron">
+                            <h3 className="carousel-header" style={{
+                                backgroundColor: "white",
+                                color: "black",
+                                padding: "10px",
+                                borderRadius: "5px 5px 0 0"}}>Dowiedz się wiecej o Ukrainie</h3>
+                            <Button variant="info">Czytaj</Button>
+                                </div>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item className="carousel-item" >
-                        <img className="d-block w-100" src={mount2} alt="second slide"/>
+                        <img className="d-block w-100" src={dnieper} alt="second slide"/>
                         <Carousel.Caption className="carousel-text">
-                            <h3 className="carousel-header">Oferujemy rozne wycieczki na kazdy gust i kieszen:)</h3>
-                            <p className="carousel-text">Jesteś miłosnikiem gór i od zawsze marzyłeś wyruszyć w góry i poznać piękno ukrainskich Karpat?
-                                A może uwielbiasz zabytkowa architekturę i chcialbys bliżej poznać historię Lwowa? W naszej ofercie kazdy znajdzie cos dla siebie!
-                            </p>
+                        <div className="jumbotron" style={{
+                            display: "flex",
+                            flexDirection: "row",
+                            justifyContent: "space-between",
+                        
+                         }}>
+                                <div className="carousel__container" style={{
+                                    background: "linear-gradient(90deg, hsla(214, 65%, 85%, 1) 21%, hsla(235, 94%, 79%, 1) 84%)",
+                                    color: "white",
+                                    fontWeight: "600",
+                                    padding: "50px",
+                                    borderRadius: "5px",
+                                    marginBottom: "10px",
+                                    width: "40%",
+                                    
+                                }}>
+                                    <p className="carousel-header" >Podróżowanie w czasie COVID-19:
+                                    Aktualne wytyczne
+                                    </p>
+                                    <Button variant="primary">Czytaj</Button>
+                                </div>
+
+                                <div className="carousel__container" style={{
+                                    background: "linear-gradient(90deg, hsla(31, 94%, 60%, 1) 0%, hsla(0, 84%, 63%, 1) 84%)",
+                                    color: "white",
+                                    fontWeight: "600",
+                                    padding: "50px",
+                                    borderRadius: "5px",
+                                    marginBottom: "10px",
+                                    width: "40%",
+                                    
+                                }}>
+                                    <p className="carousel-header" >Sprawdż możliwości zakupu ubezpieczenia u naszych partnerów:
+                                    </p>
+                                    <Button variant="warning">Kup</Button>
+                                </div>
+                        </div>
+                            
                         </Carousel.Caption>
                     </Carousel.Item >
-                    <Carousel.Item className="carousel-item" >
-                        <img className="d-block w-100" src={mount3} alt="third slide"/>
-                        <Carousel.Caption className="carousel-text">
-                            <h3 className="carousel-header">Nie zwlekaj i zarezerwuj swoja wymarzona wycieczkę juz dzis!</h3>
-                            <p className="carousel-text">Pomozemy Ci spełnic swoje marzenie! Wypełnij krótki formularz i zaczynaj pakowac walike:)
-                            </p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
+                
                 </Carousel>
-
-
-            </div>
         );
     }
 }

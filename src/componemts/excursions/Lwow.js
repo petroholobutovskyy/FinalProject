@@ -26,7 +26,7 @@ class Lwow extends Component {
                             voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
                             non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <div className="excursion__detailed-order">
-                            <button className="single-btn excursion__detailed-btn">Rezerwuj</button>
+                            <a href="/form-submission" className="single-btn excursion__detailed-btn">Rezerwuj</a>
                         </div>
                     </div>
                     <div className="excursion__detailed-info-images">

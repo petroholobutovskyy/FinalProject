@@ -1,13 +1,13 @@
 @import "../settings/fonts";
 body {
-  background-image: url("../../../../FinalProject/src/images/background.jpg");
+ background-color: #c9defa;
   background-size: cover;
   background-repeat: no-repeat;
   font-family: $font-general;
 }
 
 .container1 {
-  width: 70vw;
+  width: 80%;
   margin: 0 auto;
   min-width: 350px;
 }

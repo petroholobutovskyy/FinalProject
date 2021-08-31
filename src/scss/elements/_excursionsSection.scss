@@ -20,8 +20,8 @@
   }
 
   img {
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
   }
 
 
@@ -38,6 +38,10 @@
   }
 
 }
+.single-btn {
+  @include buttons(orangered, white, darkorange, orangered)
+
+}
 
 .excursion__section-buttons {
   width: 100%;
@@ -45,10 +49,7 @@
   justify-content: flex-end;
   margin: 20px 10px 30px;
 
-  .single-btn {
-    @include buttons(orangered, white, darkorange, orangered)
-
-  }
+  
 
   .more-info-button {
     @include buttons(mediumblue, white, dodgerblue, blue);
@@ -62,6 +63,11 @@
   border-bottom: 3px solid orangered;
   padding-bottom: 15px;
 }
+
+.excursion__section-text {
+  margin: 30px;
+}
+
 
 .excursion__detailed-info-container {
   display: flex;
@@ -127,12 +133,20 @@
 .excursion__detailed-btn {
   font-size: 24px;
   position: relative;
-  bottom: 50px;
-  left: 50%;
+  bottom: 200%;
+  left: 40%;
   transform: translateX(-50%);
+
+  @media (max-width: 1000px) {
+    position: relative;
+    bottom: 20px;
+    font-size: 20px;
+  }
 
   @media (max-width: 710px) {
     font-size: 18px;
+    position: relative;
+    left: 30%;
   }
 }
 
@@ -141,10 +155,12 @@
   @media (max-width: 1000px) {
     display: flex;
     flex-direction: column;
+    margin: 0;
   }
   img {
-    width: 100%;
-    height: 180px;
+    width:100%;
+    height: 200px;
+  
 
     @media(max-width: 1000px) {
       width: 68%;
@@ -160,9 +176,23 @@
 }
 
 .floating__image {
+
+  @media (max-width: 810px) {
+    display: flex;
+    flex-direction: column;
+  }
   img {
     float: left;
-    margin: 0 20px 20px 10px;
+    width: 40%;
+    min-width: 260px;
+    height: 40%;
+    margin: 0 20px 20px 0;
+    @media (max-width: 810px) {
+      width: 100%;
+    }
+    
+
+    
   }
 
   p {

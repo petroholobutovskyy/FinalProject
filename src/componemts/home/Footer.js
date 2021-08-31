@@ -7,9 +7,10 @@ import styled from "styled-components";
 class Footer extends Component {
     render() {
         return (
-            <FooterContainer className="container1 footer__container">
-                <footer className="footer-middle toHide">
-                    <div className="container">
+            <FooterContainer className="footer__container" style={{backgroundColor: "silver"}}>
+            
+                 <footer className="footer-middle toHide">
+                    <div className="container1">
                         <div className="row columns__footer">
                             {/*Colomn1*/}
                             <section className="col-md-3 col-sm-6">
@@ -24,32 +25,33 @@ class Footer extends Component {
                             <section className="col-md-3 col-sm-6">
                                 <h4 style={{fontSize: "14px", fontWeight: "600"}}>Wycieczki</h4>
                                 <ul className="list-unstyled">
-                                    <li> <a href="/Carpatins">Wyprawa w góry</a> </li>
-                                    <li> <a href="/Lwow">Poznaj niesamowity Lwów!</a> </li>
-                                    <li> <a href="/Castle">Sredniowieczne zamki Galicji</a> </li>
-                                    <li> <a href="/Ship">Splyw statkiem rzeka Dnister</a> </li>
+                                    <li> <a href="/excursions/carpatins">Wyprawa w góry</a> </li>
+                                    <li> <a href="/excursions/lwow">Poznaj niesamowity Lwów!</a> </li>
+                                    <li> <a href="/excursions/castle">Sredniowieczne zamki Galicji</a> </li>
+                                    <li> <a href="/excursions/huculy">Kultura Hucułów</a> </li>
                                 </ul>
                             </section>
                             {/*Colomn3*/}
-                            <section className="col-md-3 col-sm-6">
+                            <section className="col-md-3 col-sm-6" style={{textAlign: "justify"}}>
                                 <h4 style={{fontSize: "14px", fontWeight: "600"}}>Inne</h4>
                                 <ul className="list-unstyled">
-                                    <li> <a href="/About-us">O nas</a> </li>
-                                    <li> <a href="/Opinions">Opinie</a> </li>
-                                    <li> <a href="/Galery">Geleria zdjec</a> </li>
+                                    <li> <a href="/about-us">O nas</a> </li>
+                                    <li> <a href="/opinions">Opinie</a> </li>
+                                    <li> <a href="/galery">Geleria zdjec</a> </li>
 
                                 </ul>
                             </section>
                         </div>
                     </div>
-                </footer>
+                 </footer>
 
-                {/*Footer Bottom*/}
-                <footer className="footer-bottom">
+                 {/*Footer Bottom*/}
+                 <footer className="footer-bottom">
                     <p className="text-xs-center" style={{marginBottom: "0", paddingBottom: "10px"}}>
                         &copy;{new Date().getFullYear()} WanderlustTravel - All rights reserwed
                     </p>
-                </footer>
+                 </footer>
+            
             </FooterContainer>
         );
     }
