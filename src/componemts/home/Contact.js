@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from "../home/Header";
 import { Button, Form } from 'react-bootstrap';
-import HeaderMain from "../home/HeaderMain";
+import HeaderNav from "./HeaderNav";
 import Footer from "../home/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faPhone} from "@fortawesome/free-solid-svg-icons/faPhone";
@@ -22,7 +22,7 @@ const Contact =()=> {
         return (
             <>
                 <Header/>
-                <HeaderMain/>
+                <HeaderNav/>
                 <div className="container1">
                     <h3 className="contact__header-main">Masz pytania? Skontaktuj sie z nami!</h3>
                     <div className="contact__container">
@@ -36,9 +36,9 @@ const Contact =()=> {
                                 <p>wanderLustTravel@wanderlust.com</p>
                             </div>
                             <div className="contact__social-media">
-                                <FontAwesomeIcon icon={faFacebook} className="icon-user facebook" />
-                                <FontAwesomeIcon icon={faWhatsapp} className="icon-user whatsapp" />
-                                <FontAwesomeIcon icon={faYoutube} className="icon-user youtube" />
+                                <a href="https://www.facebook.com/" target="_blank"><FontAwesomeIcon icon={faFacebook} className="icon-user facebook" /></a>
+                                <a href="https://www.whatsapp.com/" target="_blank"><FontAwesomeIcon icon={faWhatsapp} className="icon-user whatsapp" /></a>
+                                <a href="https://www.youtube.com/" target="_blank"><FontAwesomeIcon icon={faYoutube} className="icon-user youtube" /></a>
                             </div>
                         </div>
                         <div className="contact__form-container">
@@ -60,7 +60,7 @@ const Contact =()=> {
                                     <label for id="contact__textarea" >Jakie masz pytanie?*</label>
                                     <textarea id="contact__textarea" cols="24" rows="4"placeholder="wpisz min 10 znaków" required></textarea>
                                 </div>
-                                <Button type="submit" className="btn btn-primary btn-lg active mt-3" 
+                                <Button type="submit" className="btn btn-primary btn-lg active mt-3 btn__contact" 
                                 style={{
                                     marginBottom: "30px",
                                     marginLeft: "50%",

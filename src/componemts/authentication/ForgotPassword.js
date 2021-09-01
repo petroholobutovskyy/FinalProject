@@ -3,7 +3,7 @@ import {Form, Button, Card, Container, Alert} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {AuthProvider, useAuth} from "../../AuthContext";
 import {Link} from "react-router-dom";
-import HeaderMain from "../home/HeaderMain";
+import HeaderNav from "../home/HeaderNav";
 
 export default function ForgotPassword() {
     const emailRef = useRef()
@@ -31,7 +31,7 @@ export default function ForgotPassword() {
 
     return (
         <>
-        <HeaderMain/>
+        <HeaderNav/>
         <AuthProvider>
             <div className="d-flex align-items-center justify-content-center" style={{minHeight: "100vh"}}>
                 <div className="w-100" style={{maxWidth: "400px"}}>

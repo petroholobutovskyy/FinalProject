@@ -8,7 +8,7 @@ class Services extends Component {
     render() {
         return (
             <div className="container1">
-                <section style={{color: 'white'}}>
+                <section style={{color: 'black'}}>
                     <h1 className="services__header">Rezerwujac z nami dostajesz:</h1>
                     <div className="service-container">
                         <img src={insurance}/>

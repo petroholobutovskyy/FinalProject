@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from "./Header";
-import HeaderMain from "./HeaderMain";
+import HeaderNav from "./HeaderNav";
 import CarouselInfo from "./CarouselInfo";
 import ExcursionsInfo from "./ExcursionsInfo";
 import WhyUs from "./WhyUs";
@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <>
             <Header/>
-            <HeaderMain/>
+            <HeaderNav/>
             <CarouselInfo/>
             <ExcursionsInfo/>
             <WhyUs/>

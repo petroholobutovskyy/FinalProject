@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import {Card, Button, Alert, } from "react-bootstrap";
 import {useAuth} from "../../AuthContext";
 import {Link, useHistory} from "react-router-dom";
-import HeaderMain from "../home/HeaderMain";
+import HeaderNav from "../home/HeaderNav";
 
 export default function Logout() {
 
@@ -23,7 +23,7 @@ export default function Logout() {
 
     return (
         <>
-            <HeaderMain/>
+            <HeaderNav/>
             <Card>
                 <Card.Body>
                     <h2 className="text-center mb-4">Profil</h2>

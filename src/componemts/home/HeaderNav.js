@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import {Link} from "react-router-dom";
 import {Container,Row, Col, Button, Header, Nav, Navbar, NavDropdown} from "react-bootstrap";
-class HeaderMain extends Component {
+class HeaderNav extends Component {
     render() {
         return (
-             <nav style={{backgroundColor: "#3723e4"}}>
+             <nav style={{backgroundColor: "#3723e4", borderBottom: "1px solid skyblue"}}>
                  <div className="container1">
                      <div className="header__navigation">
                      <ul className="navigation-list">
@@ -38,4 +38,4 @@ class HeaderMain extends Component {
     }
 }
 
-export default HeaderMain;
+export default HeaderNav;

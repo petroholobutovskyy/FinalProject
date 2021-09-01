@@ -3,13 +3,13 @@ import {Form, Button, Card, Container, Alert} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {AuthProvider, useAuth} from "../../AuthContext";
 import {Link, useHistory} from "react-router-dom";
-import HeaderMain from "../home/HeaderMain";
+import HeaderNav from "../home/HeaderNav";
 
 
 export default function Login() {
     const emailRef = useRef()
     const passwordRef = useRef()
-    // const {login} = useAuth()
+    const {login} = useAuth
     const [error, setError] = useState("")
     const [loading, setLoading] = useState(false)
     const history = useHistory()
@@ -31,7 +31,7 @@ export default function Login() {
 
     return (
         <>
-    <HeaderMain/>
+    <HeaderNav/>
     <AuthProvider>
             <div className="d-flex align-items-center justify-content-center" style={{minHeight: "100vh"}}>
                 <div className="w-100" style={{maxWidth: "400px"}}>
