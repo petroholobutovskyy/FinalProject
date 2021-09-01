@@ -1,7 +1,7 @@
 import React, {useRef, useState} from "react";
 import {Form, Button, Card, Container, Alert} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import HeaderMain from "../home/HeaderMain";
+import HeaderNav from "../home/HeaderNav";
 import {AuthProvider, useAuth} from "../../AuthContext";
 import {Link, useHistory} from "react-router-dom";
 import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
@@ -12,7 +12,7 @@ export default function Signup() {
     const emailRef = useRef()
     const passwordRef = useRef()
     const passwordConfRef = useRef()
-    const {signup, currentUser} = useAuth
+    const signup = useAuth()
     const [error, setError] = useState("")
     const [loading, setLoading] = useState(false)
     const history = useHistory()
@@ -35,11 +35,11 @@ export default function Signup() {
 
     return (
         <>
-        <HeaderMain/>
+        <HeaderNav/>
         <AuthProvider>
             <div className="d-flex align-items-center justify-content-center" style={{minHeight: "100vh"}}>
                 <div className="w-100 " style={{maxWidth: "400px"}}>
-                    {currentUser && currentUser.email}
+                
                 <Container>
                 <Card>
                     <Card.Body className=".well">

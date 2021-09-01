@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Header from "../home/Header";
-import HeaderMain from "../home/HeaderMain";
+import HeaderNav from "../home/HeaderNav";
 import Footer from "../home/Footer";
 import castle1 from '../../images/castle1.jpg'
 import castle2 from '../../images/castle2.jpg'
@@ -11,7 +11,7 @@ class Castle extends Component {
         return (
             <div className="container1">
                 <Header/>
-                <HeaderMain/>
+                <HeaderNav/>
                 <h2 className="excursion__detailed-main-header">Informacja o wycieczce:</h2>
                 <h3 className="excursion__detailed-second-header">Sredniowieczne zamki Galicji</h3>
                 <div className="excursion__detailed-info-container">

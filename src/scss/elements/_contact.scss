@@ -48,14 +48,19 @@
 
       .facebook {
         color: #3b5998;
+        font-size: 36px;
+        margin-right: 10px;
+        
       }
       .whatsapp {
-        background-color: #25D366;
-        color: white;
+        // background-color: #25D366;
+        color: #25D366;
+        font-size: 36px;
       }
       .youtube {
         color: #FF0000;
-        background-color: white;
+        // background-color: white;
+        font-size: 36px;
       }
     }
   }
@@ -70,6 +75,10 @@
     input, textarea {
       width: 100%;
     }
+  }
+
+  .btn__contact:hover {
+    background-color: rgb(13, 6, 105);
   }
 
   // .submitBtn {

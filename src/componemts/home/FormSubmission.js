@@ -4,7 +4,7 @@ import { FormGroup, Row, Col, FormLabel, FormControl, FloatingLabel, Button, Inp
 import * as Yup from "yup";
 import * as yup from "yup";
 import Header from "./Header";
-import HeaderMain from "./HeaderMain";
+import HeaderNav from "./HeaderNav";
 import Formularz from "./Formularz";
 import Footer from "./Footer";
 
@@ -13,7 +13,7 @@ const FormSubmission = () => {
     return (
         <div className="container1">
             <Header/>
-            <HeaderMain/>
+            <HeaderNav/>
             <Formularz/>
             <Footer/>
         </div>

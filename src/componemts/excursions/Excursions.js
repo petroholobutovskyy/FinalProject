@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Header from "../home/Header";
-import HeaderMain from "../home/HeaderMain";
+import HeaderNav from "../home/HeaderNav";
 import Footer from "../home/Footer";
 import Lwow from "./Lwow";
 import carpatians from '../../images/carpatians.jpg'
@@ -14,7 +14,7 @@ class Excursions extends Component {
             <>
             
                 <Header/>
-                <HeaderMain/>
+                <HeaderNav/>
              <div className="container1">
                 <div className=" excursion__section-container">
                     <div className="excursion__section-info">

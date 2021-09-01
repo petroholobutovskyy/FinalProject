@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f34c6b78.chunk.css",
+    "main.js": "/static/js/main.d466f92d.chunk.js",
+    "main.js.map": "/static/js/main.d466f92d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.57d764c4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.57d764c4.js.map",
+    "static/css/2.818011ed.chunk.css": "/static/css/2.818011ed.chunk.css",
+    "static/js/2.6e955afd.chunk.js": "/static/js/2.6e955afd.chunk.js",
+    "static/js/2.6e955afd.chunk.js.map": "/static/js/2.6e955afd.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.818011ed.chunk.css.map": "/static/css/2.818011ed.chunk.css.map",
+    "static/css/main.f34c6b78.chunk.css.map": "/static/css/main.f34c6b78.chunk.css.map",
+    "static/js/2.6e955afd.chunk.js.LICENSE.txt": "/static/js/2.6e955afd.chunk.js.LICENSE.txt",
+    "static/media/Karpaty2.7746098e.jpg": "/static/media/Karpaty2.7746098e.jpg",
+    "static/media/carpatians.27247749.jpg": "/static/media/carpatians.27247749.jpg",
+    "static/media/castle.10bfb6ee.jpg": "/static/media/castle.10bfb6ee.jpg",
+    "static/media/castle2.f76e067e.jpg": "/static/media/castle2.f76e067e.jpg",
+    "static/media/castle3.ef2e0d2d.jpg": "/static/media/castle3.ef2e0d2d.jpg",
+    "static/media/dnieper.309050a7.jpg": "/static/media/dnieper.309050a7.jpg",
+    "static/media/huculy1.89c23ca4.jpg": "/static/media/huculy1.89c23ca4.jpg",
+    "static/media/huculy2.56b3f136.jpg": "/static/media/huculy2.56b3f136.jpg",
+    "static/media/huculy3.f76c98ac.jpg": "/static/media/huculy3.f76c98ac.jpg",
+    "static/media/hucyly.73edc17e.jpg": "/static/media/hucyly.73edc17e.jpg",
+    "static/media/kartapy4.b9c55c6b.jpg": "/static/media/kartapy4.b9c55c6b.jpg",
+    "static/media/lwow.008867e3.jpg": "/static/media/lwow.008867e3.jpg",
+    "static/media/lwow1.2193e953.jpg": "/static/media/lwow1.2193e953.jpg",
+    "static/media/lwow2.9c6a3217.jpg": "/static/media/lwow2.9c6a3217.jpg",
+    "static/media/lwow3.8b976350.jpg": "/static/media/lwow3.8b976350.jpg",
+    "static/media/lwow4.f8bc6574.jpg": "/static/media/lwow4.f8bc6574.jpg",
+    "static/media/tourGuide.96c19fb4.jpg": "/static/media/tourGuide.96c19fb4.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.57d764c4.js",
+    "static/css/2.818011ed.chunk.css",
+    "static/js/2.6e955afd.chunk.js",
+    "static/css/main.f34c6b78.chunk.css",
+    "static/js/main.d466f92d.chunk.js"
+  ]
+}

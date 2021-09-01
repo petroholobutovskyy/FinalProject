@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Header from "../home/Header";
-import HeaderMain from "../home/HeaderMain";
+import HeaderNav from "../home/HeaderNav";
 import Footer from "../home/Footer";
 import karpaty1 from '../../images/Karpaty1.jpg'
 import karpaty2 from '../../images/Karpaty2.jpg'
@@ -12,7 +12,7 @@ class Carpatians extends Component {
         return (
             <div className="container1">
                 <Header/>
-                <HeaderMain/>
+                <HeaderNav/>
                 <h2 className="excursion__detailed-main-header">Informacja o wycieczce:</h2>
                 <h3 className="excursion__detailed-second-header">Wyprawa w góry</h3>
                 <section className="excursion__detailed-info-container">

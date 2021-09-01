@@ -14,20 +14,7 @@ import Logout from "./componemts/authentication/Logout";
 import ForgotPassword from "./componemts/authentication/ForgotPassword";
 import PrivateRoute from "./componemts/authentication/PrivateRoute";
 import UpdateProfile from "./componemts/authentication/UpdateProfile";
-
-
-
 function App() {
-    // const API = "http://localhost:3000";
-    //
-    // fetch(`${API}/excursions`)
-    //     .then(response => response.json())
-    //     .then(data => {
-    //         console.log(data);
-    //     })
-    //     .catch(error => {
-    //         console.log(error);
-    //     });
     return (
         <>
             <BrowserRouter>

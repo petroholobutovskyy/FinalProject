@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Header from "./Header";
-import HeaderMain from "./HeaderMain";
+import HeaderNav from "./HeaderNav";
 import Footer from "./Footer";
 
 
@@ -9,7 +9,7 @@ class AboutUs extends Component {
         return (
             <div className="container1">
                 <Header/>
-                <HeaderMain/>
+                <HeaderNav/>
                 <section className="about-us__section">
                     <article className="about-us__article">
                     <h3>Kim jestesmy?</h3>
