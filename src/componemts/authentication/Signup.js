@@ -12,7 +12,7 @@ export default function Signup() {
     const emailRef = useRef()
     const passwordRef = useRef()
     const passwordConfRef = useRef()
-    const {signup, currentUser} = useAuth
+    const signup = useAuth()
     const [error, setError] = useState("")
     const [loading, setLoading] = useState(false)
     const history = useHistory()
@@ -39,7 +39,7 @@ export default function Signup() {
         <AuthProvider>
             <div className="d-flex align-items-center justify-content-center" style={{minHeight: "100vh"}}>
                 <div className="w-100 " style={{maxWidth: "400px"}}>
-                    {currentUser && currentUser.email}
+                
                 <Container>
                 <Card>
                     <Card.Body className=".well">

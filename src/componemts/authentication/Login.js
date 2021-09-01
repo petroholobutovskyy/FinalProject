@@ -9,7 +9,7 @@ import HeaderNav from "../home/HeaderNav";
 export default function Login() {
     const emailRef = useRef()
     const passwordRef = useRef()
-    const {login} = useAuth
+    const login = useAuth()
     const [error, setError] = useState("")
     const [loading, setLoading] = useState(false)
     const history = useHistory()
@@ -20,7 +20,7 @@ export default function Login() {
         try {
             setError("")
             setLoading(true)
-            // await login(emailRef.current.value, passwordRef.current.value)
+            await login(emailRef.current.value, passwordRef.current.value)
             history.push("/")
         } catch {
             setError("Nie udało się zalogować")
