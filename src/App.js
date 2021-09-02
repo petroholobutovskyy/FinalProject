@@ -14,6 +14,7 @@ import Logout from "./componemts/authentication/Logout";
 import ForgotPassword from "./componemts/authentication/ForgotPassword";
 import PrivateRoute from "./componemts/authentication/PrivateRoute";
 import UpdateProfile from "./componemts/authentication/UpdateProfile";
+import NotFound from "./componemts/authentication/NotFound"
 function App() {
     return (
         <>
@@ -33,6 +34,7 @@ function App() {
                     <Route exact path="/excursions/carpatians" component={Carpatians} />
                     <Route exact  path="/contact" component={Contact} />
                     <Route exact path="/excursions" component={Excursions} />
+                    <Route component={NotFound} />
 
 
                 </Switch>

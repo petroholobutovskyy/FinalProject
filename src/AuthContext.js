@@ -6,7 +6,7 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } f
 
 const AuthContext = React.createContext()
 
-export function useAuth() {
+export function useAuth(app) {
     return useContext(AuthContext)
 }
 export  function AuthProvider({children}) {
