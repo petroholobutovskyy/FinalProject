@@ -1,4 +1,4 @@
-import {BrowserRouter, Switch, Route} from "react-router-dom";
+import {BrowserRouter, Switch, Route, HashRouter} from "react-router-dom";
 import Home from "./componemts/home/Home";
 import AboutUs from "./componemts/home/AboutUs";
 import Excursions from "./componemts/excursions/Excursions";
@@ -17,7 +17,7 @@ import UpdateProfile from "./componemts/authentication/UpdateProfile";
 function App() {
     return (
         <>
-            <BrowserRouter>
+            <HashRouter>
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route exact path="/signup" component={Signup} />
@@ -36,7 +36,7 @@ function App() {
 
 
                 </Switch>
-            </BrowserRouter>
+            </HashRouter>
         </>
     );
 }
