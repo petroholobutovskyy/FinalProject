@@ -8,6 +8,8 @@ import lwow4 from '../../images/lwow4.jpg'
 import dnieper from '../../images/dnieper.jpg'
 import styled from "styled-components";
 import { borderRadius } from '@material-ui/system';
+import lvivbg from '../../images/lvivBG.jpg';
+import kyiv from '../../images/kyivBG.jpg'
 
 class CarouselInfo extends Component {
     render() {
@@ -16,20 +18,21 @@ class CarouselInfo extends Component {
                 <Carousel>
                    
                     <Carousel.Item className="carousel-item" >
-                        <img className="d-block w-100" src={lwow4} alt="first slide"/>
+                        <img className="d-block w-100" src={kyiv} alt="first slide"/>
                         <Carousel.Caption className="carousel-text">
                             <div className="jumbotron">
                             <h3 className="carousel-header" style={{
-                                backgroundColor: "white",
+                                backgroundColor: "rgba(255,255,255,0.2)",
                                 color: "black",
                                 padding: "10px",
-                                borderRadius: "5px 5px 0 0"}}>Dowiedz się wiecej o Ukrainie</h3>
-                            <Button variant="info">Czytaj</Button>
+                            
+                                borderRadius: "5px 5px 0 0", fontSize: "44px"}}>Dowiedz się wiecej o Ukrainie</h3>
+                            <Button variant="info" style={{marginBottom: "25%", fontSize: "24px"}}>Czytaj</Button>
                                 </div>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item className="carousel-item" >
-                        <img className="d-block w-100" src={dnieper} alt="second slide"/>
+                        <img className="d-block w-100" src={lvivbg} alt="second slide"/>
                         <Carousel.Caption className="carousel-text">
                         <div className="jumbotron" style={{
                             display: "flex",
@@ -38,9 +41,10 @@ class CarouselInfo extends Component {
                         
                          }}>
                                 <div className="carousel__container" style={{
-                                    background: "linear-gradient(90deg, hsla(214, 65%, 85%, 1) 21%, hsla(235, 94%, 79%, 1) 84%)",
-                                    color: "white",
+                                    background: "linear-gradient(90deg, hsla(214, 65%, 85%, 0.6) 21%, hsla(235, 94%, 79%, 0.6) 84%)",
+                                    color: "#180586",
                                     fontWeight: "600",
+                                    textTransform: "uppercase",
                                     padding: "50px",
                                     borderRadius: "5px",
                                     marginBottom: "10px",
@@ -54,7 +58,7 @@ class CarouselInfo extends Component {
                                 </div>
 
                                 <div className="carousel__container" style={{
-                                    background: "linear-gradient(90deg, hsla(31, 94%, 60%, 1) 0%, hsla(0, 84%, 63%, 1) 84%)",
+                                    background: "linear-gradient(90deg, hsla(31, 94%, 60%, 0.5) 0%, hsla(0, 84%, 63%, 0.5) 84%)",
                                     color: "white",
                                     fontWeight: "600",
                                     padding: "50px",
@@ -65,7 +69,7 @@ class CarouselInfo extends Component {
                                 }}>
                                     <p className="carousel-header" >Sprawdż możliwości zakupu ubezpieczenia u naszych partnerów:
                                     </p>
-                                    <Button variant="warning">Kup</Button>
+                                    <Button variant="warning" style={{fontWeight: "600"}}>Kup</Button>
                                 </div>
                         </div>
                             
