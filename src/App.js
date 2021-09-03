@@ -36,7 +36,6 @@ function App() {
                     <Route exact path="/excursions" component={Excursions} />
                     <Route component={NotFound} />
 
-
                 </Switch>
             </BrowserRouter>
         </>

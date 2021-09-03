@@ -17,21 +17,22 @@ class CarouselInfo extends Component {
             
                 <Carousel>
                    
-                    <Carousel.Item className="carousel-item" >
+                    <Carousel.Item className="carousel-item"interval={300000} >
                         <img className="d-block w-100" src={kyiv} alt="first slide"/>
                         <Carousel.Caption className="carousel-text">
                             <div className="jumbotron">
-                            <h3 className="carousel-header" style={{
-                                backgroundColor: "rgba(255,255,255,0.2)",
-                                color: "black",
-                                padding: "10px",
-                            
-                                borderRadius: "5px 5px 0 0", fontSize: "44px"}}>Dowiedz się wiecej o Ukrainie</h3>
-                            <Button variant="info" style={{marginBottom: "25%", fontSize: "24px"}}>Czytaj</Button>
+                            <h3 className="carousel-header-primary" style={{
+                                }}>Dowiedz się wiecej o Ukrainie</h3>
+                            <Button variant="info" style={{marginBottom: "25%"}}
+                            className="button__carousel_primary"><a 
+                            href="https://edition.cnn.com/travel/article/11-most-beautiful-places-in-ukraine/index.html" 
+                            target="_blank"
+                            style={{textDecoration: "none", color: "white"}} 
+                            >Czytaj</a></Button>
                                 </div>
                         </Carousel.Caption>
                     </Carousel.Item>
-                    <Carousel.Item className="carousel-item" >
+                    <Carousel.Item className="carousel-item" interval={300000} >
                         <img className="d-block w-100" src={lvivbg} alt="second slide"/>
                         <Carousel.Caption className="carousel-text">
                         <div className="jumbotron" style={{
@@ -45,31 +46,41 @@ class CarouselInfo extends Component {
                                     color: "#180586",
                                     fontWeight: "600",
                                     textTransform: "uppercase",
-                                    padding: "50px",
                                     borderRadius: "5px",
                                     marginBottom: "10px",
                                     width: "40%",
+                                    minWidth: "150px",
+                                    minHeight: "150px",
+                                    padding: 0,
+                                    textAlign: "center"
                                     
                                 }}>
                                     <p className="carousel-header" >Podróżowanie w czasie COVID-19:
                                     Aktualne wytyczne
                                     </p>
-                                    <Button variant="primary">Czytaj</Button>
+                                    <Button variant="primary"className="button__carousel"> <a href="" 
+                                    style={{textDecoration: "none", color: "white"}}
+                                    >Czytaj</a></Button>
                                 </div>
 
                                 <div className="carousel__container" style={{
                                     background: "linear-gradient(90deg, hsla(31, 94%, 60%, 0.5) 0%, hsla(0, 84%, 63%, 0.5) 84%)",
                                     color: "white",
+                                    textTransform: "uppercase",
                                     fontWeight: "600",
                                     padding: "50px",
                                     borderRadius: "5px",
                                     marginBottom: "10px",
                                     width: "40%",
+                                    minWidth: "150px",
+                                    minHeight: "150px",
+                                    padding: 0,
+                                    textAlign: "center"
                                     
                                 }}>
                                     <p className="carousel-header" >Sprawdż możliwości zakupu ubezpieczenia u naszych partnerów:
                                     </p>
-                                    <Button variant="warning" style={{fontWeight: "600"}}>Kup</Button>
+                                    <Button variant="warning" style={{fontWeight: "600"}} className="button__carousel"><a href="" style={{textDecoration: "none"}}>Kup </a></Button>
                                 </div>
                         </div>
                             

@@ -5,16 +5,78 @@
 
 }
 
+.carousel-header-primary {
+    background-color: rgba(255,255,255,0.2);
+    color: black;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    font-size: 44px;
+
+
+    
+
+    @media (max-width: "760px") {
+        font-size: 24px;
+    }
+
+    @media (max-width: "450px") {
+        font-size: 16px;
+    }
+
+    
+}
 .carousel__container {
     @media (max-width: 860px) {
         width: 200px;
         height: 200px;
+        padding: 0;
     }
 
     @media (max-width: 700px) {
         height: 100px;
+        padding: 0;
+    }
+
+    p .carousel-header {
+        @media (max-width: "910px") {
+            font-size: 16px;
+        }
+    
+        @media (max-width: "760px") {
+            font-size: 14px;
+        }
+    
+        @media (max-width: "450px") {
+            font-size: 12px;
+        }
+    
+    }
+
+    
+
+    .button__carousel {
+
+        @media (max-width: "700px") {
+            font-size: 10px;
+        }
+        
     }
 }
+
+.button__carousel_primary {
+    font-size: 40px;
+    padding: 5px 30px;
+
+    @media (max-width: "760px") {
+        font-size: 30px;
+    }
+
+    @media (max-width: "450px") {
+        font-size: 20px;
+    }
+}
+
+
 
 
 

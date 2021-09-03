@@ -16,9 +16,9 @@ class Header extends Component {
                             <a href="/" className="header-logo">Wander<span>Lust</span></a>
                             <div className="header__user-container">
                             <a href="/login"className="header__login-link">
-                                <FontAwesomeIcon icon={faUser} className="icon-user" />
+                                <FontAwesomeIcon icon={faUser} className="icon icon-user" />
                                 Zaloguj się</a>
-                                <FontAwesomeIcon icon={faShoppingCart} className="icon-shopping-cart"/>
+                                <FontAwesomeIcon icon={faShoppingCart} className="icon icon-shopping-cart"/>
                     </div>
                     </div>
                     </div>
