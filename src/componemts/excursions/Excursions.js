@@ -20,7 +20,7 @@ class Excursions extends Component {
                     <div className="excursion__section-info">
                         <h4 className="excursion--inner-header">Wyprawa w góry</h4>
                         <div className="floating__image clearfix">
-                            <img src={carpatians}/>
+                            <img src={carpatians} alt="mountains"/>
                             <p className="excursion__section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
@@ -39,7 +39,7 @@ class Excursions extends Component {
                     <div className="excursion__section-info">
                         <h4 className="excursion--inner-header">Sredniowieczne zamki Galicji</h4>
                         <div className="floating__image clearfix">
-                            <img src={castle}/>
+                            <img src={castle} alt="castle"/>
                             <p className="excursion__section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
@@ -58,7 +58,7 @@ class Excursions extends Component {
                     <div className="excursion__section-info">
                         <h4 className="excursion--inner-header">Poznaj niesamowity Lwów!</h4>
                         <div className="floating__image clearfix">
-                            <img src={lwow}/>
+                            <img src={lwow} alt="lviv"/>
                             <p className="excursion__section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in

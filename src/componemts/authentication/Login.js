@@ -56,8 +56,8 @@ export default function Login() {
                                 </div>
                             </Card.Body>
                         </Card>
-                        <div className="w-100 text-center mt-2" >
-                            Need an account? <Link to="/Signup" style={{marginLeft: "6px"}}>Zarejestruj się</Link>
+                        <div className="w-100 text-center mt-2" style={{color: "white"}}>
+                            Nie masz jeszcze konta? <Link to="/Signup" style={{marginLeft: "6px"}}>Zarejestruj się</Link>
                         </div>
                     </Container>
                 </div>

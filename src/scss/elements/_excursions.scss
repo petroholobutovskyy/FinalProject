@@ -8,7 +8,7 @@
 .excursion__single-container {
   width: 100%; 
   height: auto;
-  color: black;
+  color: #292929;
   margin: 30px 0 10px;
   display: flex;
   justify-content: center;
@@ -33,10 +33,10 @@
 
   .excursion__header-container {
     background-color: white;
-    color: black;
+    color: #292929;
 
     .excursion__header {
-      background-color: orangered;
+      background-color: rgba(235, 79, 6, 0.849);
       color: white;
     }
   }
@@ -49,7 +49,7 @@
   margin: 20px 0 30px;
 
   .single-btn {
-    @include buttons(orangered, white, darkorange, orangered)
+    @include buttons(rgba(255, 89, 11, 0.849), white, darkorange, rgba(235, 79, 6, 0.849))
 
   }
 

@@ -13,8 +13,16 @@ class Carpatians extends Component {
             <div className="container1">
                 <Header/>
                 <HeaderNav/>
-                <h2 className="excursion__detailed-main-header">Informacja o wycieczce:</h2>
-                <h3 className="excursion__detailed-second-header">Wyprawa w góry</h3>
+                <header style={{backgroundColor: 'white'}}>
+                    <h1 className="excursion__detailed-main-header">Informacja o wycieczce:</h1>
+                    <h2  style={{
+                    marginBottom: "0", 
+                    backgroundColor: "rgba(230, 119, 68, 0.849)",
+                    color: 'white',
+                    paddingLeft: "15px"
+                    }}className="excursion__detailed-second-header">Wyprawa w góry</h2>
+                </header>
+                <main>
                 <section className="excursion__detailed-info-container">
                     <article className="excursion__detailed-info">
                         <header className="excursion__detailed-main-info">
@@ -31,11 +39,12 @@ class Carpatians extends Component {
                         </div>
                     </article>
                     <div className="excursion__detailed-info-images">
-                        <img src={karpaty1}/>
-                        <img src={karpaty2}/>
-                        <img src={kartapy4}/>
+                        <img src={karpaty1} alt="mountains"/>
+                        <img src={karpaty2} alt="mountains"/>
+                        <img src={kartapy4} alt="mountains"/>
                     </div>
                 </section>
+                </main>
                 <Footer/>
             </div>
         );

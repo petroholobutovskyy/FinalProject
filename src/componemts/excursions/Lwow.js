@@ -12,8 +12,16 @@ class Lwow extends Component {
             <div className="container1">
                 <Header/>
                 <HeaderNav/>
-                <h2 className="excursion__detailed-main-header">Informacja o wycieczce:</h2>
-                <h3 className="excursion__detailed-second-header">Poznaj niesamowity Lwów!</h3>
+                <header style={{backgroundColor: 'white'}}>
+                <h1 className="excursion__detailed-main-header">Informacja o wycieczce:</h1>
+                <h2 className="excursion__detailed-second-header" style={{
+                    marginBottom: "0", 
+                    backgroundColor: "rgba(230, 119, 68, 0.849)",
+                    color: 'white',
+                    paddingLeft: "15px"
+                    }}>Poznaj niesamowity Lwów!</h2>
+                </header>
+                <main>
                 <div className="excursion__detailed-info-container">
                     <div className="excursion__detailed-info">
                         <div className="excursion__detailed-main-info">
@@ -30,11 +38,12 @@ class Lwow extends Component {
                         </div>
                     </div>
                     <div className="excursion__detailed-info-images">
-                        <img src={lwow1}/>
-                        <img src={lwow2}/>
-                        <img src={lwow3}/>
+                        <img src={lwow1} alt="photo of the city of Lviv"/>
+                        <img src={lwow2} alt="photo of the city of Lviv"/>
+                        <img src={lwow3} alt="photo of the city of Lviv"/>
                     </div>
                 </div>
+                </main>
                 <Footer/>
             </div>
         );

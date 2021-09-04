@@ -4,7 +4,7 @@ import {Container,Row, Col, Button, Header, Nav, Navbar, NavDropdown} from "reac
 class HeaderNav extends Component {
     render() {
         return (
-             <nav style={{backgroundColor: "#3723e4", borderBottom: "1px solid skyblue"}}>
+             <nav style={{backgroundColor: "#292929", borderBottom: "1px solid rgba(230, 119, 68, 0.849)"}}>
                  <div className="container1">
                      <div className="header__navigation">
                      <ul className="navigation-list">

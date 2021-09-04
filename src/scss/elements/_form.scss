@@ -1,5 +1,7 @@
 .form__container {
-  background-color: #b3d4fc;
+  border: 1px solid rgba(236, 137, 91, 0.849);
+  background-color: rgb(214, 211, 205);
+  border-radius: 3px;
 }
 .form, .form__header {
   text-align: center;
@@ -14,11 +16,11 @@
   }
 
   input:focus, select:focus, textarea:focus {
-    box-shadow: inset 0 1px 4px orangered;
+    box-shadow: inset 0 1px 4px rgba(230, 119, 68, 0.849);
   }
 
   input::placeholder, textarea::placeholder, select, input {
-    color: orangered;
+    color: rgba(230, 119, 68, 0.849);
 
   }
 }
@@ -36,7 +38,7 @@ input, select, textarea {
   padding: 10px 20px;
   border-radius: 10px;
   color: white;
-  background-color: orangered;
+  background-color: rgba(230, 119, 68, 0.849);
 }
 
 .form__header {
@@ -59,7 +61,8 @@ input, select, textarea {
 
 }
 .container__formularz {
-  background-color: whitesmoke;
+  background-color: rgba(241, 139, 91, 0.849);
+  padding-bottom: 50px;
 
 }
 

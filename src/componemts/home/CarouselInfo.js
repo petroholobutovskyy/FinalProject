@@ -23,7 +23,7 @@ class CarouselInfo extends Component {
                             <div className="jumbotron">
                             <h3 className="carousel-header-primary" style={{
                                 }}>Dowiedz się wiecej o Ukrainie</h3>
-                            <Button variant="info" style={{marginBottom: "25%"}}
+                            <Button style={{marginBottom: "25%", backgroundColor: "rgba(230, 119, 68, 0.849)"}}
                             className="button__carousel_primary"><a 
                             href="https://edition.cnn.com/travel/article/11-most-beautiful-places-in-ukraine/index.html" 
                             target="_blank"
@@ -58,7 +58,7 @@ class CarouselInfo extends Component {
                                     <p className="carousel-header" >Podróżowanie w czasie COVID-19:
                                     Aktualne wytyczne
                                     </p>
-                                    <Button variant="primary"className="button__carousel"> <a href="" 
+                                    <Button variant="primary" className="button__carousel"> <a href="" 
                                     style={{textDecoration: "none", color: "white"}}
                                     >Czytaj</a></Button>
                                 </div>
@@ -80,7 +80,7 @@ class CarouselInfo extends Component {
                                 }}>
                                     <p className="carousel-header" >Sprawdż możliwości zakupu ubezpieczenia u naszych partnerów:
                                     </p>
-                                    <Button variant="warning" style={{fontWeight: "600"}} className="button__carousel"><a href="" style={{textDecoration: "none"}}>Kup </a></Button>
+                                    <Button variant="secondary" style={{fontWeight: "600"}} className="button__carousel"><a href="" style={{textDecoration: "none", color: "white"}}>Kup </a></Button>
                                 </div>
                         </div>
                             

@@ -1,11 +1,16 @@
 .contact__header-main {
   text-align: center;
+  font-size: 34px;
   padding: 20px;
+  color: white;
+  border-bottom: 3px solid rgba(241, 139, 91, 0.849);
+  margin-bottom: 30px;
 }
 
 .contact__container {
   display: flex;
   flex-direction: column;
+  color: white;
   
   @media (min-width: 900px) {
     flex-direction: row;

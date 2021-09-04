@@ -64,7 +64,8 @@ const Contact =()=> {
                                 style={{
                                     marginBottom: "30px",
                                     marginLeft: "50%",
-                                    transform: "translateX(-50%)"
+                                    transform: "translateX(-50%)",
+                                    backgroundColor: "rgba(230, 119, 68, 0.849)"
                                 }}
                                 >Wyślij zapytanie</Button>
                             </Form>

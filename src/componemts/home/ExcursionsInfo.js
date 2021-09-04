@@ -12,7 +12,7 @@ class ExcursionsInfo extends Component {
             <div className="container1">
                 <div className="excursion__info-container">
                     <section className="excursion__single-container">
-                        <img src={carpatians} className="img-thumbnail "/>
+                        <img src={carpatians} alt="mountains" className="img-thumbnail "/>
                         <header className="excursion__header-container">
                             <h2 className="excursion__header">Wyprawa w góry</h2>
                             <p className="excursion__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -24,7 +24,7 @@ class ExcursionsInfo extends Component {
                         </div>
                     </section>
                     <section className="excursion__single-container">
-                        <img src={lwow} className="img-thumbnail "/>
+                        <img src={lwow} alt="lviv" className="img-thumbnail "/>
                         <header className="excursion__header-container">
                             <h2 className="excursion__header">Poznaj niesamowity Lwów!</h2>
                             <p className="excursion__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -36,7 +36,7 @@ class ExcursionsInfo extends Component {
                         </div>
                     </section>
                     <section className="excursion__single-container castle">
-                        <img src={castle} className="img-thumbnail "/>
+                        <img src={castle} alt="castle" className="img-thumbnail "/>
                         <header className="excursion__header-container">
                             <h2 className="excursion__header">Sredniowieczne zamki Galicji</h2>
                             <p className="excursion__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -48,7 +48,7 @@ class ExcursionsInfo extends Component {
                         </div>
                     </section>
                     <section className="excursion__single-container ship">
-                        <img src={huculy} className="img-thumbnail"/>
+                        <img src={huculy} alt="people" className="img-thumbnail"/>
                         <header className="excursion__header-container">
                             <h2 className="excursion__header">Kultura Hucułów</h2>
                             <p className="excursion__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut

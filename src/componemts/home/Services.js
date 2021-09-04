@@ -11,7 +11,7 @@ class Services extends Component {
                 <section style={{color: 'black'}}>
                     <h1 className="services__header">Rezerwujac z nami dostajesz:</h1>
                     <div className="service-container">
-                        <img src={insurance}/>
+                        <img src={insurance} alt="insurance"/>
                         <header className="service-description">
                             <h4 className="service-header">Ubezpieczenie 24/7</h4>
                             <p className="service__text">Wyruszaj w podróz bez zadnych zmartwien! Wykup pełne ubezpieczenie i ciesz sie beztroskaw podróza w 100%! </p>
@@ -22,10 +22,10 @@ class Services extends Component {
                             <h4 className="service-header">Doswiadczonych przewodników</h4>
                             <p className="service__text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         </header>
-                        <img src={tourGuide}/>
+                        <img src={tourGuide} alt="tour guide"/>
                     </div>
                     <div className="service-container">
-                        <img src={bus}/>
+                        <img src={bus} alt="bus"/>
                         <header className="service-description">
                             <h4 className="service-header">Podróz komfortowymi autobusami</h4>
                             <p className="service__text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>

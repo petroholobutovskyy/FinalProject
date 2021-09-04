@@ -3,7 +3,7 @@
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 3px;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
   font-size: 15px;
   background-color: $backgroundColor;
@@ -31,7 +31,7 @@
   padding: $paddingLogo;
 
   span {
-    color: red;
+    color: rgba(230, 119, 68, 0.849);
   }
 
 }

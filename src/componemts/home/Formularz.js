@@ -36,7 +36,7 @@ const Formularz = () => {
                 textAlign: "center",
                 padding: "20px 0",
                 fontWeight: "500",
-                color: "blue"
+                color: "#292929"
                 }}>Formularz zgłoszeniowy</h3>
             <Formik initialValues={{ name:"", lastName: "", email:"", phone:"", terms: false}}
             validationSchema={validationSchema}
@@ -56,14 +56,15 @@ const Formularz = () => {
                        handleBlur,
                        handleSubmit,
                        isSubmitting }) =>(
-                        <Form className="mx-auto" onSubmit={handleSubmit}
+                        <Form className="mx-auto form__container" onSubmit={handleSubmit}
                         style={{
                             padding: "0 20px"
+                        
                         }}>
                             {console.log(values)}
                             <Row className="mb-3 formularz_row">
                                 <Form.Group as={Col} controlId="formName">
-                                    <Form.Label style={{color: "blue",
+                                    <Form.Label style={{color: "#292929",
                                         textTransform: "uppercase",
                                         margin: "15px 10px 10px 0",
                                     }}>Imię :</Form.Label>
@@ -84,7 +85,7 @@ const Formularz = () => {
                                     ) : null}
                                 </Form.Group>
                                 <Form.Group controlId="formlastName" as={Col}>
-                                    <Form.Label style={{color: "blue",
+                                    <Form.Label style={{color: "#292929",
                                         textTransform: "uppercase",
                                         margin: "15px 10px 10px 0",
                                     }}>Nazwisko :</Form.Label>
@@ -106,7 +107,7 @@ const Formularz = () => {
                             </Row>
                             <Row className="mb-3 formularz_row">
                                 <Form.Group as={Col} controlId="formEmail">
-                                    <Form.Label style={{color: "blue",
+                                    <Form.Label style={{color: "#292929",
                                         textTransform: "uppercase",
                                         margin: "15px 10px 10px 0",
                                     }}>Email :</Form.Label>
@@ -125,7 +126,7 @@ const Formularz = () => {
                                 ) : null}
                                 </Form.Group>
                                 <Form.Group as={Col} controlId="formPhone">
-                                    <Form.Label style={{color: "blue",
+                                    <Form.Label style={{color: "#292929",
                                         textTransform: "uppercase",
                                         margin: "15px 10px 10px 0",
                                     }}>Numer telefonu :</Form.Label>
@@ -146,6 +147,7 @@ const Formularz = () => {
                             </Row>
                             <Row className="mb-3 formularz_row">
                                 <Col>
+                                
                                     <FormSelect as={Col} style={{marginTop: "15px", border: "1px solid #222222"}} required>
                                         <option value="">Wybierz wycieczke:</option>
                                         <option value="gory">Wyprawa w góry</option>
@@ -153,6 +155,7 @@ const Formularz = () => {
                                         <option value="zamki">Sredniowieczne zamki Galicji</option>
                                         <option value="Dnister">Splyw statkiem rzeka Dnister</option>
                                     </FormSelect>
+                                    
                                 </Col>
                                 <Col>
                                     <FormSelect as={Col} style={{marginTop: "15px", border: "1px solid #222222"}}>
@@ -180,13 +183,13 @@ const Formularz = () => {
                             </Row>
                             <Row className="mb-3 formularz_row">
                                 <FormGroup as={Col}
-                                           style={{color: "blue", textTransform: "uppercase"}}>
+                                           style={{color: "#292929", textTransform: "uppercase"}}>
                                     <FormLabel>Wybierz datę podróży</FormLabel>
                                     <FormControl type="date" style={{border: "1px solid #222222"}} required/>
                                 </FormGroup>
                             </Row>
                             <Row className="mb-3 formularz_row">
-                                <FormLabel style={{color: "blue", textTransform: "uppercase"}}>Dodatkowe pytania:</FormLabel>
+                                <FormLabel style={{color: "#292929", textTransform: "uppercase"}}>Dodatkowe pytania:</FormLabel>
                                 <Col><FormControl as="textarea" style={{height: "150px", marginBottom: "20px", border: "1px solid #222222"}}/></Col>
                             </Row>
                             <FormGroup className="mb-3 formularz_row" id="formGridCheckbox"
@@ -198,7 +201,7 @@ const Formularz = () => {
                                     isInvalid={!!errors.terms}
                                     feedback={errors.terms}
                                     id="validationFormik0"
-                                    style={{marginRight: "30px", fontSize: "12px"}}/>
+                                    style={{marginRight: "30px", fontSize: "12px", color: "#292929"}}/>
                                 Oświadczam, że zapoznałem się z „Regulaminem świadczenia usług pośrednictwa ubezpieczeniowego drogą
                                 elektroniczną przez WanderlustTravel i akceptuję zawarte w nim warunki.
                                 Oświadczam, że niniejsza umowa ubezpieczenia spełnia moje wymagania i potrzeby ubezpieczeniowe, przy

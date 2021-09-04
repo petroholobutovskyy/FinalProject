@@ -3,7 +3,7 @@
 .header__container {
   display: flex;
   justify-content: space-between;
-  background-color: #3723e4;
+  background-color: #292929;
  
 
 
@@ -22,18 +22,26 @@
   
   .header__user-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-right: 1rem;
     font-size: 30px;
     color: white;
+
+    @media (min-width: "780px") {
+      flex-direction: row;
+    }
     .icon-shopping-cart {
       margin-left: 10px;
       color: red;
+      
     }
+
+ 
 
     .header__login-link {
       font-size: 14px;
       margin-right: 0;
+      margin-top: 5px;
       color: white;
       text-decoration: none;
       text-transform: uppercase;
@@ -53,6 +61,7 @@
     .icon {
 
       font-size: 18px;
+      color: rgba(230, 119, 68, 0.849);
       
 
       @media (min-width: "580px") {
@@ -63,6 +72,32 @@
   }
 }
 
+.weather {
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+
+  @media (min-width: 780px) {
+    padding: 30px;
+    font-size: 16px;
+    font-size: 20px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+
+  .weather-temperature {
+    margin-left: 5px;
+  }
+
+ .weather-pic img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
 
 // ************************  header navigation ******************************
 
@@ -70,7 +105,7 @@
 .header__navigation {
   display: flex;
   justify-content: center;
-  background-color: #3723e4;
+ 
   
 
 

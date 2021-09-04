@@ -62,8 +62,8 @@ export default function Signup() {
                         </Form>
                     </Card.Body>
                 </Card>
-                <div className="w-100 text-center mt-2">
-                    Already have an account? <Link to="/Login">Zaloguj się</Link>
+                <div className="w-100 text-center mt-2" style={{color: "white"}}>
+                    Masz już konto? <Link to="/Login">Zaloguj się</Link>
                 </div>
                 </Container>
                 </div>
