@@ -69,16 +69,16 @@
 }
 
 
-.excursion__detailed-info-container {
-  display: flex;
-
-  @media(max-width: 1000px) {
+.excursion__detailed-info-container { 
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 500px;
-  }
 
+    @media (min-width:990px) {
+      flex-direction: row;
+    }
+  
 
 
   .excursion__detailed-info {
@@ -86,32 +86,31 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    @media (max-width: 1000px) {
-      height: 100%;
-    }
+    height: 100%;
+   
 
     .excursion__detailed-text {
-      margin-top: -180px;
+      font-size: 14px;
+      margin-top: -100px;
       padding: 10px;
 
-      @media (max-width: 1000px) {
+
+      @media(min-width: 710px) {
+        font-size: 16px;
         margin-top: 0;
       }
-      @media(max-width: 710px) {
-        font-size: 14px;
-      }
     }
+
   }
 
   .excursion__detailed-main-info {
     display: flex;
     justify-content: space-between;
-    font-size: 34px;
+    font-size: 14px;
     padding: 20px;
 
-    @media (max-width: 1000px) {
-      font-size: 14px;
+    @media (min-width: 1000px) {
+      font-size: 34px;
     }
 
     .excursion__detailed-inner-header {
@@ -122,57 +121,58 @@
     }
 
     .excursion__detailed-price {
-
-      @media (max-width: 1000px) {
         font-size: 20px;
-      }
     }
   }
 }
 
 .excursion__detailed-btn {
-  font-size: 24px;
+  font-size: 18px;
   position: relative;
-  bottom: 200%;
-  left: 40%;
-  transform: translateX(-50%);
+  left: 30%;
+  bottom: 140%;
 
-  @media (max-width: 1000px) {
+
+  @media (min-width: 710px) {
     position: relative;
+    left: 40%;
     bottom: 20px;
     font-size: 20px;
   }
 
-  @media (max-width: 710px) {
-    font-size: 18px;
-    position: relative;
-    left: 30%;
+  @media (min-width: 1000px) {
+    font-size: 24px;
+  position: relative;
+  bottom: 200%;
+  left: 40%;
+  transform: translateX(-50%);
   }
+
+  
+
 }
 
 .excursion__detailed-info-images {
+  display: flex;
+    flex-direction: row;
+    width: 49%;
 
-  @media (max-width: 1000px) {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-  }
-  img {
-    width:100%;
-    height: 200px;
+    @media (min-width: 990px) {
+      flex-direction: column;
+      width: 100%;
+      max-width: 200px;
+    }
   
+  img {
+    width: 68%;
+    height: 100%;
 
-    @media(max-width: 1000px) {
-      width: 68%;
-      height: 100%;
+    @media(min-width: 990px) {
+      width:100%;
+      height: 200px;
     }
   }
 
-  @media (max-width: 1000px) {
-    display: flex;
-    flex-direction: row;
-    width: 49%;
-  }
 }
 
 .floating__image {
@@ -182,13 +182,14 @@
     flex-direction: column;
   }
   img {
+    width: 100%;
+    @media (min-width: 810px) {
+    
     float: left;
     width: 40%;
     min-width: 260px;
     height: 40%;
     margin: 0 20px 20px 0;
-    @media (max-width: 810px) {
-      width: 100%;
     }
     
 

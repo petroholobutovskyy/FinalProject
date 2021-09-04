@@ -10,69 +10,65 @@
     color: black;
     padding: 10px;
     border-radius: 5px 5px 0 0;
-    font-size: 44px;
+    font-size: 16px;
 
-
-    
-
-    @media (max-width: "760px") {
+    @media (min-width: "450px") {
         font-size: 24px;
     }
-
-    @media (max-width: "450px") {
-        font-size: 16px;
+    @media (min-width: "760px") {
+        font-size: 44px;
     }
 
     
 }
 .carousel__container {
-    @media (max-width: 860px) {
+    height: 100px;
+        padding: 0;
+
+    @media (min-width: 700px) {
         width: 200px;
         height: 200px;
         padding: 0;
     }
 
-    @media (max-width: 700px) {
-        height: 100px;
-        padding: 0;
-    }
 
-    p .carousel-header {
-        @media (max-width: "910px") {
-            font-size: 16px;
-        }
-    
-        @media (max-width: "760px") {
+    .carousel-header {
+        font-size: 12px;
+
+        @media (min-width:"450px") {
             font-size: 14px;
         }
     
-        @media (max-width: "450px") {
-            font-size: 12px;
+        @media (min-width: "760px") {
+            font-size: 16px;
         }
     
     }
+
+
 
     
 
     .button__carousel {
-
-        @media (max-width: "700px") {
-            font-size: 10px;
+        font-size: 10px;
+        @media (min-width: "700px") {
+            font-size: 16px;
         }
         
     }
 }
 
 .button__carousel_primary {
-    font-size: 40px;
-    padding: 5px 30px;
+    font-size: 20px;
+    
 
-    @media (max-width: "760px") {
+    @media (min-width: "450px") {
         font-size: 30px;
     }
 
-    @media (max-width: "450px") {
-        font-size: 20px;
+    @media (min-width: "760px") {
+        font-size: 40px;
+    padding: 5px 30px;
     }
 }
 
@@ -80,10 +76,5 @@
 
 
 
-// font-weight: 600;
-// padding: 50px,
-// border-radius: 5px,
-// margin-bottom: 10px,
-// width 200px,
-// height 200px,
-// color white
+
+

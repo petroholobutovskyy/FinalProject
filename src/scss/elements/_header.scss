@@ -8,13 +8,18 @@
 
 
   .header-logo {
-    @include logo(34px, 15px);
+    @include logo(26px, 10px);
 
-    @media (max-width: "580px") {
-      font-size: 24px;
+    @media (min-width: "580px") {
+
+      @include logo(34px, 15px);
     }
+  
     
   }
+
+
+  
   .header__user-container {
     display: flex;
     align-items: center;
@@ -27,14 +32,16 @@
     }
 
     .header__login-link {
-      font-size: 16px;
+      font-size: 14px;
+      margin-right: 0;
       color: white;
       text-decoration: none;
       text-transform: uppercase;
+      
 
-      @media (max-width:"490px" ) {
-        font-size: 14px;
-        margin-right: 0;
+      @media (min-width:"490px" ) {
+      font-size: 16px;
+    
       }
 
       &:hover {
@@ -42,14 +49,17 @@
       }
     }
 
+    
     .icon {
 
-      font-size: 24px;
+      font-size: 18px;
+      
 
-      @media (max-width: "580px") {
-        font-size: 18px;
+      @media (min-width: "580px") {
+        font-size: 24px;
       }
     }
+
   }
 }
 
@@ -65,24 +75,29 @@
 
 
   .navigation-list {
+
     display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    @media (min-width: "780px"){
+  
     flex-direction: row;
     list-style: none;
     text-transform: uppercase;
     margin: .7rem 0;
 
-    @media (max-width: 810px){
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-
     }
 
-    .navigation-list-item {
-      padding: 10px 20px;
 
-      @media (max-width: 810px) {
-        border-bottom: 1px solid white;
+
+    .navigation-list-item {
+      border-bottom: 1px solid white;
+      
+
+      @media (min-width: "780px") {
+        padding: 10px 20px;
+        border-bottom: none;
       }
 
       a {

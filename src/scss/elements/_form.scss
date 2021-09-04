@@ -40,20 +40,21 @@ input, select, textarea {
 }
 
 .form__header {
-  text-transform: uppercase;
   text-align: center;
-  margin-bottom: 30px;
 
-  @media (max-width: 600px) {
+  @media (min-width: 600px) {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: 510px) {
     text-align: left;
+    
   }
 
-  @media (max-width: 510px) {
+  @media (min-width: 370px) {
     font-size: 24px;
-  }
-
-  @media (max-width: 370px) {
-    text-align: center;
+    
   }
 
 }
