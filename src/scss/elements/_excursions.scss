@@ -1,4 +1,6 @@
 @import "../settings/mixins";
+@import "../settings/colors";
+
 .excursion__info-container {
   display: flex;
   flex-direction: row;
@@ -8,7 +10,7 @@
 .excursion__single-container {
   width: 100%; 
   height: auto;
-  color: #292929;
+  color: $bgColor;
   margin: 30px 0 10px;
   display: flex;
   justify-content: center;
@@ -32,12 +34,12 @@
   }
 
   .excursion__header-container {
-    background-color: white;
-    color: #292929;
+    background-color: $colorWhite;
+    color: $bgColor;
 
     .excursion__header {
       background-color: rgba(235, 79, 6, 0.849);
-      color: white;
+      color: $colorWhite;
     }
   }
 }

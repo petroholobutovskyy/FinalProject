@@ -1,14 +1,14 @@
-
+@import "../settings/colors";
 
 .carousel--single-article {
 
     font-weight: 600;
-    background-color: white;
+    background-color: $colorWhite;
 }
 
 .carousel-header-primary {
-    background-color: rgba(255,255,255,0.5);
-    color: #292929;
+    background-color: $mainColor;
+    color: $bgColor;
     padding: 10px;
     border-radius: 5px 5px 0 0;
     font-size: 16px;
@@ -52,7 +52,7 @@
 
     .carousel-control-prev span {
         font-weight: 700;
-        color: black;
+        color: $colorBlack;
     }
 
 

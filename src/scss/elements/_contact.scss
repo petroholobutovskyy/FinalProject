@@ -1,16 +1,18 @@
+@import "../settings/colors";
+
 .contact__header-main {
   text-align: center;
   font-size: 34px;
   padding: 20px;
-  color: white;
-  border-bottom: 3px solid rgba(241, 139, 91, 0.849);
+  color: $colorWhite;
+  border-bottom: 3px solid $colorLightOrange;
   margin-bottom: 30px;
 }
 
 .contact__container {
   display: flex;
   flex-direction: column;
-  color: white;
+  color: $colorWhite;
   
   @media (min-width: 900px) {
     flex-direction: row;
@@ -46,19 +48,17 @@
       }
 
       .facebook {
-        color: #3b5998;
+        color: $colorFB;
         font-size: 36px;
         margin-right: 10px;
         
       }
       .whatsapp {
-        // background-color: #25D366;
-        color: #25D366;
+        color: $colorWhatsapp;
         font-size: 36px;
       }
       .youtube {
-        color: #FF0000;
-        // background-color: white;
+        color: $colorYouTube;
         font-size: 36px;
       }
     }
@@ -82,7 +82,4 @@
     background-color: rgb(13, 6, 105);
   }
 
-  // .submitBtn {
-
-  // }
 }
