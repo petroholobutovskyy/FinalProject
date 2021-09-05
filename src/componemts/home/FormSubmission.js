@@ -14,7 +14,9 @@ const FormSubmission = () => {
         <div className="container1">
             <Header/>
             <HeaderNav/>
+            <main>
             <Formularz/>
+            </main>
             <Footer/>
         </div>
     );

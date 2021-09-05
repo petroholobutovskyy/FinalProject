@@ -58,7 +58,7 @@ class CarouselInfo extends Component {
                                     <p className="carousel-header" >Podróżowanie w czasie COVID-19:
                                     Aktualne wytyczne
                                     </p>
-                                    <Button variant="primary" className="button__carousel"> <a href="" 
+                                    <Button variant="primary" className="button__carousel"> <a href="https://moz.gov.ua/koronavirus-2019-ncov" target="_blank"
                                     style={{textDecoration: "none", color: "white"}}
                                     >Czytaj</a></Button>
                                 </div>
@@ -80,7 +80,7 @@ class CarouselInfo extends Component {
                                 }}>
                                     <p className="carousel-header" >Sprawdż możliwości zakupu ubezpieczenia u naszych partnerów:
                                     </p>
-                                    <Button variant="secondary" style={{fontWeight: "600"}} className="button__carousel"><a href="" style={{textDecoration: "none", color: "white"}}>Kup </a></Button>
+                                    <Button variant="secondary" style={{fontWeight: "600"}} className="button__carousel"><a href="https://www.pzu.com.ua/" target="_blank" style={{textDecoration: "none", color: "white"}}>Kup </a></Button>
                                 </div>
                         </div>
                             

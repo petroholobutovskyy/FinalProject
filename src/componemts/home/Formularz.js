@@ -31,13 +31,13 @@ const Formularz = () => {
     return (
         <div className="container__formularz">
             <div className="container1">
-            <h3 style={{
+            <h1 style={{
                 textTransform: "uppercase",
                 textAlign: "center",
                 padding: "20px 0",
                 fontWeight: "500",
                 color: "#292929"
-                }}>Formularz zgłoszeniowy</h3>
+                }}>Formularz zgłoszeniowy</h1>
             <Formik initialValues={{ name:"", lastName: "", email:"", phone:"", terms: false}}
             validationSchema={validationSchema}
                     onSubmit={(values, {setSubmitting, resetForm}) => {
@@ -67,7 +67,7 @@ const Formularz = () => {
                                     <Form.Label style={{color: "#292929",
                                         textTransform: "uppercase",
                                         margin: "15px 10px 10px 0",
-                                    }}>Imię :</Form.Label>
+                                    }}>Imię* :</Form.Label>
                                     <Form.Control
                                     style={{
                                         border: "1px solid #222222"
@@ -88,7 +88,7 @@ const Formularz = () => {
                                     <Form.Label style={{color: "#292929",
                                         textTransform: "uppercase",
                                         margin: "15px 10px 10px 0",
-                                    }}>Nazwisko :</Form.Label>
+                                    }}>Nazwisko* :</Form.Label>
                                     <Form.Control style={{
                                         border: "1px solid #222222"
                                     }}
@@ -110,7 +110,7 @@ const Formularz = () => {
                                     <Form.Label style={{color: "#292929",
                                         textTransform: "uppercase",
                                         margin: "15px 10px 10px 0",
-                                    }}>Email :</Form.Label>
+                                    }}>Email* :</Form.Label>
                                     <Form.Control style={{
                                         border: "1px solid #222222"
                                     }}
@@ -129,7 +129,7 @@ const Formularz = () => {
                                     <Form.Label style={{color: "#292929",
                                         textTransform: "uppercase",
                                         margin: "15px 10px 10px 0",
-                                    }}>Numer telefonu :</Form.Label>
+                                    }}>Numer telefonu* :</Form.Label>
                                     <Form.Control style={{
                                         border: "1px solid #222222"
                                     }}
@@ -151,9 +151,9 @@ const Formularz = () => {
                                     <FormSelect as={Col} style={{marginTop: "15px", border: "1px solid #222222"}} required>
                                         <option value="">Wybierz wycieczke:</option>
                                         <option value="gory">Wyprawa w góry</option>
-                                        <option value="lwow">Pozdnaj niesamowity Lwów!</option>
-                                        <option value="zamki">Sredniowieczne zamki Galicji</option>
-                                        <option value="Dnister">Splyw statkiem rzeka Dnister</option>
+                                        <option value="lwow">Poznaj niesamowity Lwów!</option>
+                                        <option value="zamki">Średniowieczne zamki Galicji</option>
+                                        <option value="Dnister">Kultura Hucułów</option>
                                     </FormSelect>
                                     
                                 </Col>
